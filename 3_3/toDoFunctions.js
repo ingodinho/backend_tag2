@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const addToDo = (input) => {
   const lowerInput = input.toLowerCase();
-	fs.read('todo.json', (err, data) => {
+	fs.readFile('todo.json', (err, data) => {
 		if (err) {
 			console.log(err);
 			const obj = {
